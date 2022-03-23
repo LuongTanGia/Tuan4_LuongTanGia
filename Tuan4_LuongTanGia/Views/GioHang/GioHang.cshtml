@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Tuan4_LuongTanGia.Models.Giohang>
     @{ 
         ViewBag.Title = "GioHang";
-        Layout = "/Views/Shared/_Layout.cshtml";
+        Layout = "~/Views/Shared/_Layout.cshtml";
     }
     <h2>Giỏ hàng</h2>
     <table class="table table-hover table-bordered"    style="justify-content:space-between; align-items:center">
@@ -52,7 +52,7 @@
         </tr>
         <tr style="font-weight:bold; color:black; text-align:right ;text-decoration:none">
             <td colspan-"5">
-                <button class="btn btn-info">@Html.ActionLink("Đặt hàng", "Index", "Home") </button> 
+                <button class="btn btn-info">@Html.ActionLink("Đặt hàng", "DatHang", "GioHang") </button> 
             </td>
         </tr>
     </table>
